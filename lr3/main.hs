@@ -16,8 +16,28 @@ insertAtN n y  = intercalate [y] . groups n
 
 --Завдання 2
 --а)
-isprime :: [Int] -> [Int]
-isprime [x] |x==2 =[x]
-isprime [] = []
-isprime k |[x| x <- (x:xs), mod k x]
-                   | otherwise = isprime xs
+nPrimes x y =  head [z | z <- [x..y], isPrime z]
+isPrime :: (Integral a) => a -> Bool
+isPrime k | k <=1 = False | otherwise = 0 `notElem`  moding k [2..k-1]
+
+moding _ [] = []
+moding k (x:xs) = mod k x: moding k xs
+
+
+--б) 
+--nPrimes :: Integer -> Integer -> Integer 
+nPrimes2 x y =  head [z | z <- [x..y], isPrime z]
+
+isPrime2 :: (Integral a) => a -> Bool
+isPrime2 k | k <=1 = False | otherwise = 0 `notElem` map (mod k)[2..k-1]
+
+
+
+
+
+
+
+
+
+
+
