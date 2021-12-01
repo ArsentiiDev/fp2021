@@ -36,7 +36,7 @@ main = do
 --     hClose handle
 
 -- -- В файл
---     let res = divideListN l n
+--     let res = insert n c l
 --     let f = fst res
 --     let s = snd res
 --     let res_final = f ++ "\n" ++ s
