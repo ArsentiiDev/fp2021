@@ -19,8 +19,6 @@ insert n y xs = countdown n xs where
 main :: IO ()
 main = do
 
--- Закоментуйте, будь ласка, один варіант виводу та один варіант вводу для коректної роботи програми
-
 -- -- З клавіатури
     n <- prompt "The number? "
     c <- prompt "The char?"
