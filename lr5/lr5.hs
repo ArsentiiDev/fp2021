@@ -25,8 +25,8 @@ main = do
     l <- prompt "The line? "
 
 -- -- На екран
-    let area = insert n c l
-    putStrLn $ "The area of that triangle is " ++ area
+    let insertRes = insert n c l
+    putStrLn $ "The insert result " ++ insertRes
 
 -- -- З файлу
 --     handle <- openFile "input.txt" ReadMode 
